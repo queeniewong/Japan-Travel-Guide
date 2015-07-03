@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Japan Travel Guide</title>
+   <link type='text/css' rel='stylesheet' href='css/style.css' />
+	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+<!--   <link type='text/css' rel='stylesheet' href='css/cards.css' />-->
+</head>
+
+<body>
+	<div id="wrapper">
+	<h1>Queenie Travel Guide</h1>
+	
+	<!--Begin Navigation Bar-->
+	<div id="navWrapper">
+	<ul id="nav">
+		<li class="item"><a href="index.html"> Home </a></li>
+		<li class="item"><a href="#"> Sightseeing </a>
+			<ul class="submenu">
+			   <li class="subitem"><a href="osaka.html">Osaka</a></li>
+               <li class="subitem"><a href="kyoto.html">Kyoto</a></li>
+			   <li class="subitem"><a href="fukuoka.html">Fukuoka</a></li>
+               <li class="subitem"><a href="kumamoto.html">Kumamoto </a></li>
+            </ul>
+		</li>
+
+		<li class="item"><a href="experience.html"> Special Experience</a></li>
+		<li class="item"><a href="contact.html" class="current"> Contact Us </a></li>
+	</ul>
+	</div>
+
+	<!--End Navigation Bar-->
+	
+	<!--Begin main contact-->
+	<form id="contact" class="content">
+
+			<h1> Contact Us </h1>
+			<p>Feel free to fill in this form if you have any question.</p>
+			<div id="form">
+			<label>
+				<span>Name :</span>
+				<input id="name" type="text" name="name" />
+			</label>
+			
+			<label>
+				<span>Email :</span>
+				<input id="email" type="text" name="email" />
+			</label>
+			
+
+			  
+			<label>
+				<span>Gender :</span></label>
+				<div id="genderdiv">
+					<input type="radio" name="sex" value="male"/> 
+					<label class="gender">Male</label>
+					<input type="radio" name="sex" value="female"/> 
+					<label class="gender">Female</label>
+				</div>
+			
+			
+			<label>
+				<span>Subject :</span>
+				<input id="subject" type="text" name="subject" />
+			</label>
+			<label>
+				<span>Message :</span>
+				<textarea id="message" name="message"></textarea>
+			</label> 
+		  <!--   <label>
+				<span>Subject :</span><select name="selection">
+				<option value="Job Inquiry">Job Inquiry</option>
+				<option value="General Question">General Question</option>
+				</select>
+			</label>    -->
+			 <label>
+				<input type="button" class="button" value="Send" /> 
+			</label>    
+			</div>
+	</form>
+
+	<!--End main contact-->	
+	
+	<!--Begin footer-->
+	<div id="footer">
+		<p> &#169; 2015 Queenie Wong </p>
+	</div>
+	<!--End footer-->
+	</div>
+
+</body>
+</html>

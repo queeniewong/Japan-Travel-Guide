@@ -1,0 +1,409 @@
+/*Body*/
+body{
+	padding: 0;
+	margin: 0;
+    background-image: url("../images/bg.jpg");
+	font-family: "Calibri", san-serif;
+	
+}
+/*
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}*/
+
+/*Begin wrapper*/
+#wrapper{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1100px;
+	min-width: 880px;
+	color: white;
+}
+/*End wrapper*/
+
+/*Begin Page Title*/
+h1{
+	width: 100%;
+	margin: 0 auto;
+	padding: 5% 0;
+		
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	color: RGB(180,100,117);
+	font-size: 300%;
+}
+/*End Page Title*/
+
+/*begin nav*/
+#nav{
+   width:100%;
+   margin:0 auto;
+   padding:0;
+
+}
+
+#nav a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 120%;
+	font-family: "Calibri", san-serif;
+}
+
+/*** Begin dropdown navigation ***/
+ul#nav li.item
+      {
+         list-style-type: none;
+         width: 23%;
+         height: 40px;
+         margin-left: 1%;
+         padding: 0;
+		line-height: 40px;
+        position:relative;
+        float:left;
+        text-align:center;
+        font-weight:bold;
+		border: 3px #DBB2C3 solid;	
+		background-color: #C37F9B;
+		border-radius: 10px;
+      }
+	  
+ ul.submenu
+      {
+         padding:0;
+         margin:0;
+         width:100%;
+         
+         position: absolute;
+         left: -9999px;
+		 top: 0px;
+         background-color: #C37F9B;
+      }
+
+      li.subitem
+      {
+         list-style-type: none;
+      }	  
+	  
+ul#nav li.item:hover ul.submenu
+      {
+         left: -3px;
+         top: 36px;
+		 border-radius: 0 0 10px 10px;
+		 border: 3px #DBB2C3 solid	;
+		 border-top: none;
+      }	  
+
+	  
+ul#nav li.item:hover,
+ul#nav li.subitem:hover    {
+	background-color:RGB(180,95,117); 
+ }
+/*END dropdown list*/
+ /*END nav*/
+
+ /*BEGIN Homepage and Sightseeing pages*/
+.content, .place{
+	width: 90%;
+	background-color: rgba(180,95,117, 0.6);
+	margin: 125px auto 50px auto;
+	padding: 2.5%;
+	border-radius: 10px;
+	overflow: auto
+}
+
+/*content in index page*/
+#mainContent{
+	width: 65%;
+	float: left;
+}
+
+/*BEGIN News sidebar in homepage*/
+#news{
+	width: 25%;
+	border-radius: 10px;
+	background-color: rgba(255,255,255, 0.5);
+	float: right;
+	padding: 0 1%; 
+	color: black;
+}
+
+#moreinfo{text-align:right;}
+#news a {text-decoration:none;}
+#news a:hover {text-decoration:underline;}
+/*END News sidebar in homepage*/
+
+h2{text-decoration: underline;}
+
+	#news img{
+	width: 100%;
+}
+/*END content in index page*/
+
+
+/*style for all images*/
+img{
+	width: 50%;
+	border-radius:5px;
+}
+
+#mainContent img{
+	width: 70%;
+}
+
+/*BEGIN content for sightseeing pages*/
+.place h1, #expContent h1, form h1{
+	padding-top: 0;
+	padding-bottom: 2.5%;
+	text-align: center;
+	color: #660033;
+}
+
+/*sightseeing page and expDeatil page*/
+.spot img, .expDetail img{
+	margin-right: 5%;
+	float: left;
+}
+
+.spot, .expDetail{
+	overflow: auto;
+	margin: .5% 0;
+	padding: .5%;
+
+}
+
+#fushimi strong{
+	text-align: center;
+	font-size: 120%;
+}
+
+#kumamotoimg{
+	width: 40%;
+	image-orientation: 90deg;	
+}
+
+/*END content for sightseeing pages*/
+
+/*BEGIN Experience page*/
+#expPhoto{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#expPhoto li{
+	display: inline-block;
+	margin: 0.5% auto;
+	padding: 1%;
+	padding-top: 0;
+	width: 31.33%;
+	float:left;
+	border-radius: 5px;
+	position:relative;
+	}
+
+#expPhoto img{	
+	width: 100%;
+}
+	
+#expPhoto{
+	list-style-type: none;
+	padding-bottom: 100px;
+}
+
+.expimg{
+	width: 100%;
+}
+
+/*Align text with the image*/
+span.photoText{
+	display: table;
+	font-family: 'Courgette', cursive;	
+	color: transparent;
+	font-size: 300%;
+	text-align: center;
+	
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+span.photoText span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  	padding: 44% 0;
+}
+
+/*Hover effect for the image*/
+/*hover off effect*/
+#expPhoto li img{
+	transition: 2s linear;
+}
+
+#expPhoto li:hover img{
+	opacity: 0.5;
+	transition: 1s linear;
+}
+#expPhoto li:hover .photoText{
+	color: white;
+	transition: 1s linear;
+}
+
+/*ENG Experience page*/
+
+/*BEGIN experience details pages*/
+
+.detailtext{ 
+	position:relative;
+	width:45%; 
+	float:left;
+	padding-bottom: 5%;
+	}
+
+.shopinfo{
+	width: 80%;
+	border-radius: 10px;
+	background-color: rgba(255,255,255, 0.5);
+	padding: 1% 5%; 
+	margin-top: 10%;
+	margin-bottom: 0;
+	color: black;
+}
+.shopinfo p a{
+	text-decoration:none;
+	font-weight: bold;
+	color: black;
+}
+.shopinfo p a:hover{
+	text-decoration:underline;
+	font-weight: bold;
+	color: #660033;
+}
+
+#reservation{text-align:right; font-size: 80%; 	color: RGB(180,95,117);}
+
+
+/*BEGIN Backward link*/
+p.backward{	
+	position:absolute;
+	right:0;
+	bottom: 0;
+	text-align: right;
+	padding-right: 5%;
+	
+}
+p.backward a{
+	text-decoration:none;
+	color: RGB(180,95,117);
+}
+
+p.backward a:hover{
+	text-decoration:none;
+	color:#660033;
+	font-size:120%;
+}
+/*END Backward link*/
+/*END experience details pages*/
+/*END experience details pages*/
+
+/*BEGIN form*/
+form p{
+		color: #660033;
+		text-align: left;
+		margin-bottom: 10px;
+		font-size:120%;
+	}
+
+div#form{
+	width: 60%;
+	margin: 0 auto;
+	}
+
+label{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	text-shadow: 1px 1px 1px #660033;
+}
+
+label>span{
+	float: left;
+	clear: left;
+	width: 30%;
+	text-align: right;
+	padding-right: 1%;
+	margin-top: 1%;
+	padding-left: 0;
+	
+}
+
+input[type="text"],
+textarea{
+	border: thin grey solid;
+	height: 20px;
+	font-size: 12px;
+	line-height: 15px;
+	width: 45%;
+	margin: 1%;
+	padding: 0;
+	}
+
+textarea{
+	height: 100px;
+}
+
+.gender{
+	
+	width: 20%;
+	margin: 1% 0;
+	padding:0;
+	display: inline;
+	float: none;
+}
+
+#genderdiv{
+	height: 35px;
+}
+input[type="radio"] label{
+
+	width:20%; 	
+	margin: 0;
+
+}
+	
+input[type="radio"]{
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+	
+.button{
+	background-color: #91476C;
+	border: none;
+	padding: 10px 20px;
+	margin: 0 50%;
+	color: white;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #660033;
+	text-align: center;
+}
+.button:hover{	background-color: #660033;}
+/*END form*/
+
+/*footer*/
+#footer{
+	margin: 5%;
+	margin-bottom:0;
+	text-align: center;
+	font-size: 80%;
+	color: #660033;
+	font-family: 'Courgette', cursive;
+}
