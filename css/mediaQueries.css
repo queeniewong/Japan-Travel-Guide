@@ -1,0 +1,197 @@
+/*Mobile screen in portrait and landscape*/
+@media screen and (max-width: 767px)  { 
+
+	/* Site Header */
+	h1
+	{
+	   margin:0;
+	   padding: 1% 0;
+	   width: 100%;
+	   font-size:200%;
+	}
+	body{
+      /*Remove background image */
+	   background-image: none;
+	   margin:0;
+	   padding:0;
+	   width: 100%;
+	}
+	
+	#wrapper{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		color: black;
+		min-width: 0;
+	}
+	
+#nav{
+   width:100%;
+   margin:0;
+   padding:0;
+}
+
+#nav a{
+	display: inline;
+	margin: 0;
+}
+
+ul#nav li.item
+      {
+         width: 100%;
+         height: auto;
+         margin: 0;
+		line-height: auto;
+        /*position:static;*/
+        float:none;
+		border: none;	
+		border-radius: 0;
+      }
+	  
+	   ul.submenu,ul#expsubmenu
+      {    position: static;
+		background-color: #DBB2C3;
+		width: 100%;
+      }
+	  
+	  
+	  ul#nav li.item:hover ul.submenu
+      {
+		 border-radius: 0;
+		 border: none	;
+
+      }	  
+ /*BEGIN Homepage and Sightseeing pages*/
+.content, .place{
+	width: 100%;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	border-radius: 0;
+	overflow: none;
+}
+
+#mainContent{
+	width: 100%;
+	float: none;
+}
+
+	  
+/*BEGIN News sidebar in homepage*/
+#news{
+	width: 100%;
+	border-radius: 0;
+	float: none;
+	padding: 0; 
+}
+
+
+/*END News sidebar in homepage*/
+
+img, #mainContent img{
+	width:100%;
+	border-radius:0;
+}
+
+#kumamotoimg{
+	width: 100%;
+}
+
+.spot img, .expDetail img{
+	margin: 0;
+	float: none;
+}
+
+.spot, .expDetail{
+	overflow: none;
+	padding: 0;	
+}
+
+.place h1{padding-top: 10px;}
+
+/*footer*/
+#footer{
+	margin: 0%;
+width: 100%;
+}
+
+/*Experience detail page*/
+.detailtext{ 
+	width:100%; 
+	float:none;
+	}
+
+.shopinfo{
+	width: 90%;
+	padding: 0; 
+	margin: 0 auto;
+	color: black;
+}
+
+p.backward{	
+position:static;
+	text-align: center;
+	padding-right: 5%;
+}
+
+/*experience page*/
+#disablelink{pointer-events: none;}
+#expPhoto li{
+	background-color: black;
+	display: inline;
+	margin: 10px 0;
+	padding: 0%;
+	width: 30%;
+	float:none;
+	border-radius: 0;
+	position:relative;
+	}
+	
+/*BEGIN form*/
+div#form{
+	width: 100%;
+	margin: 0;
+	color: white;
+	}
+form p{margin-left: 10px;}
+
+label>span{width: 25%;}
+
+input[type="text"],
+textarea{
+	width: 60%;
+	margin: 5px 0;
+	}
+
+
+.button{
+	padding: 10px 20px;
+	margin: 0 0 0 45%;
+}
+
+/*END form*/
+}
+
+/*Tablet screen in portrait*/
+@media screen and (min-width:  768px) and (max-width: 1023px)  { 
+body{
+      /*Remove background image */
+	   /*background-image: none;*/
+	   margin:0;
+	   padding:0;
+	   width: 100%;
+	}
+	
+		#wrapper{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		color: black;
+		min-width: 768px;
+	}
+ }
+
+/*Tablet screen in landscape and computer screen*/
+@media screen and (min-width:  1024px){
+
+}

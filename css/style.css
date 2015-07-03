@@ -99,6 +99,10 @@ ul#nav li.item:hover ul.submenu
 		 border-top: none;
       }	  
 
+ul#nav li.item:hover ul#expsubmenu
+      {
+         left: -9999px;
+      }	  
 	  
 ul#nav li.item:hover,
 ul#nav li.subitem:hover    {
@@ -207,7 +211,9 @@ img{
 	}
 
 #expPhoto img{	
-	width: 100%;
+	width: 100%;	
+
+
 }
 	
 #expPhoto{
@@ -351,7 +357,7 @@ textarea{
 	height: 20px;
 	font-size: 12px;
 	line-height: 15px;
-	width: 45%;
+	width: 50%;
 	margin: 1%;
 	padding: 0;
 	}

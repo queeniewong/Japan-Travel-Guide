@@ -4,6 +4,8 @@
    <title>Japan Travel Guide</title>
    <link type='text/css' rel='stylesheet' href='css/style.css' />
 	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link type="text/css" href="css/mediaQueries.css" rel="stylesheet" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!--   <link type='text/css' rel='stylesheet' href='css/cards.css' />-->
 </head>
 
@@ -23,7 +25,13 @@
                <li class="subitem"><a href="kumamoto.html">Kumamoto </a></li>
             </ul>
 		</li>
-		<li class="item"><a href="experience.html" class="current"> Special Experience</a></li>
+		<li class="item"><a href="experience.html" id="disablelink"> Special Experience</a>
+			<ul class="submenu" id="expsubmenu">
+			   <li class="subitem"><a href="kimono.html">Kimono</a></li>
+               <li class="subitem"><a href="ramen.html">Ramen</a></li>
+			   <li class="subitem"><a href="tatami.html">Tatami</a></li>
+            </ul>
+		</li>
 		<li class="item"><a href="contact.html"> Contact Us </a></li>
 	</ul>
 	</div>
@@ -34,7 +42,7 @@
 	<div class="content" id="expContent">
 		<h1>Tatami</h1>
 		<div id="tatamiDetail" class="expDetail">
-			<img src="images/tatami2.JPG" alt="tatami shop">
+			<img src="images/tatamimaterial.jpg" alt="tatami shop">
 			<div class="detailtext">
 				<p><strong> Tatami</strong> is a type of mat used as a flooring material in 
 					traditional Japanese-style rooms. Traditionally made using rice straw to 
