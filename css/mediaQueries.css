@@ -186,8 +186,13 @@ body{
 		width: 100%;
 		margin: 0;
 		padding: 0;
-		color: black;
+		color: white;
 		min-width: 768px;
+	}
+	div#form{
+	width: 100%;
+	margin: 0;
+	color: white;
 	}
  }
 
