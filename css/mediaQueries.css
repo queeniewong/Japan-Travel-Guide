@@ -1,13 +1,16 @@
+
+
 /*Mobile screen in portrait and landscape*/
 @media screen and (max-width: 767px)  { 
 
 	/* Site Header */
 	h1
 	{
-	   margin:0;
-	   padding: 1% 0;
-	   width: 100%;
-	   font-size:200%;
+		margin:0;
+		padding:0;
+		padding-top: 10px;
+		width: 100%;
+		font-size:200%;
 	}
 	body{
       /*Remove background image */
@@ -48,7 +51,7 @@ ul#nav li.item
 		border-radius: 0;
       }
 	  
-	   ul.submenu,ul#expsubmenu
+	   ul.submenu
       {    position: static;
 		background-color: #DBB2C3;
 		width: 100%;
@@ -168,9 +171,47 @@ textarea{
 	padding: 10px 20px;
 	margin: 0 0 0 45%;
 }
-
 /*END form*/
+	/*hide menu test*/
+	body h1{position: relative;}
+	#menu-icon {	
+		display: inline-block;
+		position: absolute;
+		right:10px;
+		top: 15px;
+		}
+
+	#nav, #nav:active { 
+		display: none;
+		position: absolute;
+		right:24px;
+		top: 55px;
+		margin: 0 auto;
+		width:90%;
+		border: medium #660033 solid;
+		border-radius: 4px;
+	}
+	#navWrapper:hover ul {display: block;}
+
 }
+
+@media screen and (max-width: 320px)  { 
+	/* Site Header */
+	h1{	
+		font-size:170%;	
+		text-align:left;
+		padding-top:5px;
+		margin: 5px;
+	}
+	
+	#menu-icon {	
+		right:10px;
+		top: 10px;
+	}
+	#nav, #nav:active { 
+		right:16px;
+		top: 50px;}
+}	
 
 /*Tablet screen in portrait*/
 @media screen and (min-width:  768px) and (max-width: 1023px)  { 
@@ -190,10 +231,14 @@ body{
 		min-width: 768px;
 	}
 	div#form{
-	width: 100%;
+	padding: 0;
+	width: 90%;
 	margin: 0;
 	color: white;
 	}
+	
+	
+
  }
 
 /*Tablet screen in landscape and computer screen*/

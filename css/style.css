@@ -414,3 +414,12 @@ input[type="radio"]{
 	color: #660033;
 	font-family: 'Courgette', cursive;
 }
+
+/*hamburger menu test*/
+#menu-icon {
+	display: hidden;
+	width: 35px;
+	height: 35px;
+	background-image: url("../images/list2.png") ;
+	background-repeat: no-repeat;
+}
