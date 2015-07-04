@@ -196,7 +196,7 @@ textarea{
 
 }
 
-@media screen and (max-width: 320px)  { 
+@media screen and (max-width: 420px)  { 
 	/* Site Header */
 	h1{	
 		font-size:150%;	
@@ -222,6 +222,8 @@ body{
 	   margin:0;
 	   padding:0;
 	   width: 100%;
+	   background-image: url("../images/bg2.jpg");
+		background-repeat: repeat;
 	}
 	
 		#wrapper{
@@ -243,6 +245,9 @@ body{
  }
 
 /*Tablet screen in landscape and computer screen*/
-@media screen and (min-width:  1024px){
+@media screen and (min-width:  1024px) and (max-width: 1173px)  {
+	body{
+   background-image: url("../images/bg2.jpg");
 
+	background-repeat: repeat;}
 }
