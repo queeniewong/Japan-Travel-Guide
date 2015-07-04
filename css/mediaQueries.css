@@ -174,6 +174,7 @@ textarea{
 /*END form*/
 	/*hide menu test*/
 	body h1{position: relative;}
+	#nav a{font-size:100%;}
 	#menu-icon {	
 		display: inline-block;
 		position: absolute;
@@ -182,12 +183,12 @@ textarea{
 		}
 
 	#nav, #nav:active { 
+		z-index: 1;
 		display: none;
 		position: absolute;
-		right:24px;
+		right:10px;
 		top: 55px;
-		margin: 0 auto;
-		width:90%;
+		width: 50%;
 		border: medium #660033 solid;
 		border-radius: 4px;
 	}
@@ -201,15 +202,15 @@ textarea{
 		font-size:170%;	
 		text-align:left;
 		padding-top:5px;
-		margin: 5px;
+
 	}
 	
 	#menu-icon {	
-		right:10px;
+		right:5px;
 		top: 10px;
 	}
 	#nav, #nav:active { 
-		right:16px;
+		right:5px;
 		top: 50px;}
 }	
 
